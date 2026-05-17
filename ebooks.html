@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>전자책 서재 | AI리더십센터</title>
+
+  <meta
+    name="description"
+    content="AI리더십센터 전자책 서재 — 인문학과 AI가 만나는 배움의 책장"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    body {
+      background: #f8f5ef;
+      color: #2f2a24;
+      font-family: sans-serif;
+      margin: 0;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px 60px;
+    }
+
+    .hero h1 {
+      font-size: 52px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      line-height: 1.7;
+      color: #5f574f;
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .hero-buttons {
+      margin-top: 32px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 24px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 8px;
+    }
+
+    .btn-dark {
+      background: #2f2a24;
+      color: white;
+    }
+
+    .btn-light {
+      background: white;
+      color: #2f2a24;
+      border: 1px solid #ddd;
+    }
+
+    .section {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .section-title h2 {
+      font-size: 36px;
+    }
+
+    .book-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .book-card {
+      background: white;
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    .book-cover {
+      width: 100%;
+      aspect-ratio: 3/4;
+      object-fit: cover;
+      background: #ddd;
+    }
+
+    .book-content {
+      padding: 24px;
+    }
+
+    .book-category {
+      color: #9a6b32;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .book-title {
+      font-size: 28px;
+      margin: 10px 0;
+    }
+
+    .book-subtitle {
+      color: #666;
+      margin-bottom: 18px;
+    }
+
+    .book-description {
+      line-height: 1.7;
+      margin-bottom: 24px;
+    }
+
+    .card-buttons a {
+      display: block;
+      text-align: center;
+      padding: 12px;
+      border-radius: 14px;
+      margin-bottom: 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .primary {
+      background: #2f2a24;
+      color: white;
+    }
+
+    .secondary {
+      background: #f3ede3;
+      color: #2f2a24;
+    }
+
+    .footer-cta {
+      text-align: center;
+      background: #efe4d3;
+      padding: 70px 20px;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 36px;
+      }
+
+      .hero p {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav style="padding:20px; text-align:center;">
+    <a href="index.html">홈</a> |
+    <a href="about.html">소개</a> |
+    <a href="programs.html">프로그램</a> |
+    <a href="ebooks.html">전자책 서재</a> |
+    <a href="contact.html">문의</a>
+  </nav>
+
+  <section class="hero">
+    <h1>AI리더십센터 전자책 서재</h1>
+
+    <p>
+      AI 시대, 다시 나를 세우는 질문과 배움의 책장
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#books" class="btn btn-dark">전자책 둘러보기</a>
+
+      <a
+        href="https://hero.ailc.kr"
+        target="_blank"
+        class="btn btn-light"
+      >
+        AI마법학교 체험하기
+      </a>
+    </div>
+  </section>
+
+  <section id="books" class="section">
+
+    <div class="section-title">
+      <h2>추천 전자책</h2>
+    </div>
+
+    <div class="book-grid">
+
+      <div class="book-card">
+
+        <img
+          src="https://placehold.co/600x800"
+          class="book-cover"
+        />
+
+        <div class="book-content">
+
+          <div class="book-category">
+            인문 AI
+          </div>
+
+          <div class="book-title">
+            영웅의 길
+          </div>
+
+          <div class="book-subtitle">
+            AI 시대, 다시 나를 찾아가는 여정
+          </div>
+
+          <div class="book-description">
+            익숙한 삶을 넘어 새로운 부름에 응답하는 사람들을 위한
+            인문학적 자기성찰의 길잡이입니다.
+          </div>
+
+          <div class="card-buttons">
+            <a href="#" class="primary">책 소개 보기</a>
+            <a href="#" class="secondary">구매/읽기</a>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="book-card">
+
+        <img
+          src="https://placehold.co/600x800"
+          class="book-cover"
+        />
+
+        <div class="book-content">
+
+          <div class="book-category">
+            자기성찰
+          </div>
+
+          <div class="book-title">
+            AI 마법학교
+          </div>
+
+          <div class="book-subtitle">
+            30일, 나에게 돌아가는 여정
+          </div>
+
+          <div class="book-description">
+            하루 한 질문을 따라가며 자신을 다시 만나고,
+            AI와 함께 내면의 언어를 회복하는 30일 여정입니다.
+          </div>
+
+          <div class="card-buttons">
+            <a href="#" class="primary">책 소개 보기</a>
+
+            <a
+              href="https://hero.ailc.kr"
+              target="_blank"
+              class="secondary"
+            >
+              관련 앱 체험
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="footer-cta">
+
+    <h2>
+      책에서 강의로,
+      강의에서 삶의 변화로
+    </h2>
+
+    <p>
+      AI리더십센터의 전자책은
+      단순한 읽을거리를 넘어,
+      질문과 성찰의 입구가 됩니다.
+    </p>
+
+  </section>
+
+</body>
+</html>
