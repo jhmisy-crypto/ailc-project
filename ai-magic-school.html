@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>AI 마법학교 | AI리더십센터 전자책 서재</title>
+
+  <meta
+  name="description"
+  content="AI 마법학교 — 30일, 나에게 돌아가는 여정"
+/>
+  <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    body {
+      background: #f8f5ef;
+      color: #2f2a24;
+      font-family: sans-serif;
+      margin: 0;
+    }
+
+    nav {
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #2f2a24;
+      text-decoration: none;
+      font-weight: 600;
+      margin: 0 6px;
+    }
+
+    .detail-hero {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 80px 20px 60px;
+      display: grid;
+      grid-template-columns: 360px 1fr;
+      gap: 56px;
+      align-items: center;
+    }
+
+    .cover-box {
+      background: #efe4d3;
+      border-radius: 28px;
+      padding: 24px;
+      box-shadow: 0 16px 40px rgba(0,0,0,0.08);
+    }
+
+    .cover-box img {
+      width: 100%;
+      border-radius: 16px;
+      display: block;
+    }
+
+    .eyebrow {
+      color: #9a6b32;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: 52px;
+      margin: 0 0 16px;
+      line-height: 1.15;
+    }
+
+    .subtitle {
+      font-size: 24px;
+      color: #5f574f;
+      margin-bottom: 28px;
+      line-height: 1.5;
+    }
+
+    .intro {
+      font-size: 18px;
+      line-height: 1.8;
+      color: #4c453f;
+      margin-bottom: 32px;
+    }
+
+    .buttons a {
+      display: inline-block;
+      padding: 14px 24px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 6px;
+    }
+
+    .primary {
+      background: #2f2a24;
+      color: white;
+    }
+
+    .secondary {
+      background: white;
+      color: #2f2a24;
+      border: 1px solid #ddd;
+    }
+
+    .section {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 56px 20px;
+    }
+
+    .section h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .section p {
+      font-size: 18px;
+      line-height: 1.8;
+      color: #4c453f;
+    }
+
+    .quote-box {
+      background: white;
+      border-left: 6px solid #9a6b32;
+      padding: 32px;
+      border-radius: 20px;
+      box-shadow: 0 12px 32px rgba(0,0,0,0.06);
+      font-size: 22px;
+      line-height: 1.7;
+      font-weight: 600;
+    }
+
+    .quote-section {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 56px 20px;
+}
+
+.quote-section blockquote {
+  background: white;
+  border-left: 6px solid #9a6b32;
+  padding: 32px;
+  border-radius: 20px;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.06);
+  font-size: 22px;
+  line-height: 1.7;
+  font-weight: 600;
+  margin: 0;
+}
+
+    .keyword-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 14px;
+      margin-top: 24px;
+    }
+
+    .keyword {
+      background: white;
+      border-radius: 999px;
+      padding: 14px 18px;
+      text-align: center;
+      font-weight: 700;
+      color: #6a4b25;
+      border: 1px solid #eadfce;
+    }
+
+    .toc {
+      background: white;
+      border-radius: 24px;
+      padding: 32px;
+      box-shadow: 0 12px 32px rgba(0,0,0,0.06);
+    }
+
+    .toc p {
+      margin: 10px 0;
+    }
+
+    .cta {
+      text-align: center;
+      background: #efe4d3;
+      padding: 70px 20px;
+    }
+
+    .cta h2 {
+      font-size: 32px;
+      margin-bottom: 16px;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 20px;
+      color: #6a4b25;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      .detail-hero {
+        grid-template-columns: 1fr;
+        padding-top: 40px;
+      }
+
+      h1 {
+        font-size: 40px;
+      }
+
+      .subtitle {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <a href="index.html">홈</a> |
+    <a href="about.html">소개</a> |
+    <a href="programs.html">프로그램</a> |
+    <a href="ebooks.html">전자책 서재</a> |
+    <a href="contact.html">문의</a>
+  </nav>
+
+  <section class="detail-hero">
+    <div class="cover-box">
+        <img src="ai-magic-school-cover.jpg" alt="AI 마법학교 표지" />
+    </div>
+
+    <div>
+      <div class="eyebrow">AI리더십센터 전자책 서재</div>
+      <h1>AI 마법학교</h1>
+      <div class="subtitle">
+        AI 시대, 다시 나를 찾아가는 여정
+      </div>
+
+      <div class="intro">
+       『AI 마법학교』는 하루 한 질문을 따라가며
+         자신을 다시 만나고, AI와 함께 내면의 언어를 회복하는
+         30일 질문 여정입니다.
+      </div>
+
+      <div class="buttons">
+        <a href="#" class="primary">구매/읽기</a>
+        <a href="ebooks.html" class="secondary">전자책 서재로 돌아가기</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+  <h2>이런 분께 추천합니다</h2>
+
+  <ul class="reader-list">
+    <li>AI를 도구가 아니라 대화의 동반자로 경험하고 싶은 사람</li>
+    <li>하루 한 질문으로 자신을 돌아보고 싶은 사람</li>
+    <li>기록과 성찰을 통해 삶의 방향을 정리하고 싶은 사람</li>
+    <li>시니어 AI 학습을 부드럽게 시작하고 싶은 사람</li>
+    <li>AI마법학교 앱과 함께 30일 여정을 걷고 싶은 사람</li>
+  </ul>
+  </section>
+
+  <section class="quote-section">
+  <blockquote>
+    “완주보다 중요한 것은,
+    질문을 따라 다시 나에게 돌아오는 일이다.”
+  </blockquote>
+  </section>
+
+  <section class="section">
+  <h2>목차 미리보기</h2>
+  <div class="toc">
+    <p><strong>Day 0</strong> — 입구: 왜 이 여정을 시작하는가</p>
+    <p><strong>Day 1–7</strong> — 나를 만나는 첫 질문</p>
+    <p><strong>Day 8–14</strong> — 경험을 다시 바라보는 시간</p>
+    <p><strong>Day 15–20</strong> — 관계와 삶의 패턴 읽기</p>
+    <p><strong>Day 21–25</strong> — 선택과 내려놓음</p>
+    <p><strong>Day 26–30</strong> — 귀환: 다시 삶으로 돌아가기</p>
+    <p><strong>에필로그</strong> — 질문은 끝나지 않는다</p>
+  </div>
+</section>
+
+<section class="cta">
+  <h2>책에서 앱으로, 앱에서 나의 삶으로</h2>
+  <p>
+    『AI 마법학교』는 전자책과 AI마법학교 앱이 함께 이어지는
+    30일 질문 여정입니다.
+  </p>
+
+  <div class="buttons">
+    <a href="https://hero.ailc.kr" target="_blank" class="primary">
+      AI마법학교 앱 체험하기
+    </a>
+    <a href="ebooks.html" class="secondary">
+      전자책 서재로 돌아가기
+    </a>
+  </div>
+</section>
+
+</body>
+</html>
