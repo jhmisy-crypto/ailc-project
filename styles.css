@@ -544,4 +544,8 @@ iframe {
   .program-detail-grid dd {
     margin-bottom: 0.45rem;
   }
+
+  .magic-card {
+  margin-top: -24px;
+ }
 }
