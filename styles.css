@@ -549,3 +549,992 @@ iframe {
   margin-top: -24px;
  }
 }
+
+
+/* ======================================
+   AI리더십센터 홈페이지 V5.0
+   STEP 12-1 : 기본 색상 적용
+   ====================================== */
+
+:root {
+  --v5-cream: #F8F5EE;
+  --v5-green: #173F35;
+  --v5-gold: #B89A5B;
+  --v5-text: #26352E;
+}
+
+body {
+  background-color: var(--v5-cream);
+  color: var(--v5-text);
+}
+
+
+/* ======================================
+   V5.0 STEP 12-2C
+   Hero 영역 디자인
+   ====================================== */
+
+#hero {
+  background: #F8F5EE;
+}
+
+#hero .eyebrow {
+  color: #B89A5B;
+}
+
+#hero h2 {
+  color: #173F35;
+}
+
+#hero .hero-content > p {
+  color: #394B43;
+}
+
+#hero .hero-actions .button {
+  background: #173F35;
+  color: #FFFFFF;
+  border-color: #173F35;
+}
+
+#hero .hero-actions .button:hover {
+  background: #245B4D;
+  border-color: #245B4D;
+}
+
+
+/* ======================================
+   V5.0 STEP 12-2D
+   Hero 설명 문구 디자인
+   ====================================== */
+
+#hero .hero-subtext {
+  margin-top: 12px;
+  color: #52665C;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+#hero .hero-content h2 {
+  line-height: 1.25;
+  letter-spacing: -0.03em;
+}
+
+
+/* ======================================
+   V5.0 STEP 12-2F
+   실제 교육 현장 사진 적용
+   ====================================== */
+
+#hero .hero-image {
+  background-image: url("images/hero-classroom.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* ======================================
+   V5.0 STEP 12-2H
+   교육 현장 사진 비율 조정
+   ====================================== */
+
+
+/* V5.0 Hero 사진 비율 최종 조정 */
+
+#hero .hero-image {
+  background-size: cover;
+  background-position: center;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  min-height: 0;
+}
+
+
+/* ======================================
+   V5.0 STEP 13-2
+   미션 영역 디자인
+   ====================================== */
+
+#mission .eyebrow {
+  color: #B89A5B;
+}
+
+#mission .section-heading h3 {
+  color: #173F35;
+}
+
+#mission .section-heading > p:not(.eyebrow) {
+  color: #52665C;
+  line-height: 1.8;
+}
+
+#mission .mission-grid .program-card {
+  background: #FFFFFF;
+  border: 1px solid #E5DED0;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 4px 16px rgba(23, 63, 53, 0.05);
+}
+
+#mission .mission-grid .program-card h4 {
+  color: #173F35;
+}
+
+#mission .mission-grid .program-card p {
+  color: #52665C;
+  line-height: 1.8;
+}
+
+
+/* ======================================
+   V5.0 STEP 14-2
+   핵심 교육 프로그램 디자인
+   ====================================== */
+
+#programs .program-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+#programs .eyebrow {
+  color: #B89A5B;
+}
+
+#programs .section-heading h3 {
+  color: #173F35;
+}
+
+#programs .section-heading > p:not(.eyebrow) {
+  color: #52665C;
+  line-height: 1.8;
+}
+
+#programs .program-card {
+  background: #FFFFFF;
+  border: 1px solid #E5DED0;
+  border-radius: 16px;
+  padding: 28px;
+  min-width: 0;
+  box-shadow: 0 4px 16px rgba(23, 63, 53, 0.05);
+}
+
+#programs .program-card .tag {
+  background: #F8F5EE;
+  color: #B89A5B;
+}
+
+#programs .program-card h4 {
+  color: #173F35;
+  line-height: 1.5;
+}
+
+#programs .program-card p {
+  color: #52665C;
+  line-height: 1.8;
+}
+
+#programs .program-card .card-link {
+  color: #173F35;
+  border-color: #B89A5B;
+}
+
+@media (max-width: 760px) {
+  #programs .program-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* ======================================
+   V5.0 - Programs Page Design
+   STEP 15-1 : Page Header
+====================================== */
+
+.programs-page .programs-hero {
+  background: #F8F5EE;
+  border-radius: 24px;
+  padding: 64px 40px;
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+.programs-page .programs-hero .eyebrow {
+  color: #B89A5B;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+}
+
+.programs-page .programs-hero h2 {
+  color: #173F35;
+  font-size: clamp(28px, 4vw, 42px);
+  line-height: 1.35;
+  margin-bottom: 24px;
+}
+
+.programs-page .programs-hero p {
+  color: #52645C;
+  font-size: 17px;
+  line-height: 1.9;
+  max-width: 760px;
+  margin: 0 auto 12px;
+}
+
+@media (max-width: 768px) {
+  .programs-page .programs-hero {
+    padding: 40px 20px;
+  }
+
+  .programs-page .programs-hero p {
+    font-size: 15px;
+  }
+}
+
+
+/* ======================================
+   V5.0 - Programs Detail Cards
+   STEP 15-2
+====================================== */
+
+.programs-page .program-detail-card {
+  background: #FFFFFF;
+  border: 1px solid #E5DED0;
+  border-radius: 24px;
+  padding: 40px;
+  margin-bottom: 32px;
+  box-shadow: 0 8px 24px rgba(23, 63, 53, 0.05);
+  scroll-margin-top: 100px;
+}
+
+.programs-page .program-detail-card h3 {
+  color: #173F35;
+  font-size: 26px;
+  line-height: 1.4;
+  margin-bottom: 18px;
+}
+
+.programs-page .program-detail-card > p {
+  color: #52645C;
+  font-size: 17px;
+  line-height: 1.9;
+  margin-bottom: 28px;
+}
+
+.programs-page .program-detail-grid {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: 0;
+  margin: 0 0 28px;
+}
+
+.programs-page .program-detail-grid dt,
+.programs-page .program-detail-grid dd {
+  padding: 18px 0;
+  border-bottom: 1px solid #E5DED0;
+  line-height: 1.8;
+}
+
+.programs-page .program-detail-grid dt {
+  color: #173F35;
+  font-weight: 700;
+}
+
+.programs-page .program-detail-grid dd {
+  color: #52645C;
+  margin: 0;
+}
+
+.programs-page .program-detail-card .button {
+  display: inline-block;
+  background: #173F35;
+  color: #FFFFFF;
+  border: 1px solid #173F35;
+  border-radius: 10px;
+  padding: 13px 22px;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 4px 8px 4px 0;
+}
+
+.programs-page .program-detail-card .button:hover {
+  background: #245A4B;
+}
+
+.programs-page .program-detail-card .button.secondary {
+  background: #FFFFFF;
+  color: #173F35;
+}
+
+.programs-page .program-detail-card .button.secondary:hover {
+  background: #F8F5EE;
+}
+
+@media (max-width: 768px) {
+  .programs-page .program-detail-card {
+    padding: 24px 20px;
+  }
+
+  .programs-page .program-detail-card h3 {
+    font-size: 22px;
+  }
+
+  .programs-page .program-detail-card > p {
+    font-size: 15px;
+  }
+
+  .programs-page .program-detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .programs-page .program-detail-grid dt {
+    padding: 16px 0 4px;
+    border-bottom: 0;
+  }
+
+  .programs-page .program-detail-grid dd {
+    padding: 0 0 16px;
+  }
+}
+
+
+/* ======================================
+   V5.0 - Programs Quick Navigation
+   STEP 15-3B
+====================================== */
+
+.programs-page .program-quick-nav {
+  background: #F8F5EE;
+  border: 1px solid #E5DED0;
+  border-radius: 24px;
+  padding: 36px;
+  margin-bottom: 40px;
+}
+
+.programs-page .program-quick-nav h3 {
+  color: #173F35;
+  font-size: 24px;
+  text-align: center;
+  margin: 0 0 12px;
+}
+
+.programs-page .program-quick-nav > p {
+  color: #52645C;
+  text-align: center;
+  line-height: 1.8;
+  margin: 0 0 28px;
+}
+
+.programs-page .program-quick-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.programs-page .program-quick-link {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #FFFFFF;
+  border: 1px solid #E5DED0;
+  border-radius: 14px;
+  padding: 22px;
+  color: #173F35;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-decoration: none;
+  transition: background 0.2s, border-color 0.2s,
+              transform 0.2s;
+}
+
+.programs-page .program-quick-link:hover {
+  background: #F1EBDD;
+  border-color: #B89A5B;
+  transform: translateY(-2px);
+}
+
+.programs-page .program-quick-link:focus-visible {
+  outline: 3px solid #B89A5B;
+  outline-offset: 3px;
+}
+
+.programs-page .program-quick-number {
+  color: #B89A5B;
+  font-size: 20px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .programs-page .program-quick-nav {
+    padding: 24px 18px;
+  }
+
+  .programs-page .program-quick-nav h3 {
+    font-size: 21px;
+  }
+
+  .programs-page .program-quick-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .programs-page .program-quick-link {
+    padding: 18px;
+    font-size: 15px;
+  }
+}
+
+
+/* ======================================
+   V5.0 - Mobile Quick Navigation Refinement
+   STEP 15-4C
+====================================== */
+
+@media (max-width: 768px) {
+
+  .programs-page .program-quick-nav {
+    padding: 24px 16px;
+  }
+
+  .programs-page .program-quick-nav h3 {
+    font-size: 19px;
+    line-height: 1.5;
+    max-width: 290px;
+    margin: 0 auto 14px;
+    word-break: keep-all;
+  }
+
+  .programs-page .program-quick-nav > p {
+    font-size: 14px;
+    line-height: 1.7;
+    word-break: keep-all;
+  }
+
+  .programs-page .program-quick-link {
+    padding: 18px 14px;
+    gap: 12px;
+    font-size: 14px;
+    word-break: keep-all;
+  }
+
+  .programs-page .program-quick-number {
+    font-size: 18px;
+  }
+
+}
+
+
+/* =========================================
+   STEP 16-4A : ABOUT PAGE HERO
+   ========================================= */
+
+body[data-page="about"] .about-hero {
+  background: #F8F5EE;
+  padding: 70px 40px;
+  border-radius: 20px;
+  text-align: center;
+  margin: 30px 0 55px;
+}
+
+body[data-page="about"] .about-hero .eyebrow {
+  color: #B89A5B;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+body[data-page="about"] .about-hero h2 {
+  color: #173F35;
+  font-size: clamp(28px, 4vw, 42px);
+  line-height: 1.4;
+  word-break: keep-all;
+  margin-bottom: 22px;
+}
+
+body[data-page="about"] .about-hero-subtitle {
+  color: #173F35;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  word-break: keep-all;
+}
+
+body[data-page="about"] .about-hero-description {
+  color: #52645C;
+  font-size: 16px;
+  line-height: 1.9;
+  max-width: 720px;
+  margin: 0 auto;
+  word-break: keep-all;
+}
+
+@media (max-width: 768px) {
+  body[data-page="about"] .about-hero {
+    padding: 45px 20px;
+    margin: 20px 0 35px;
+  }
+
+  body[data-page="about"] .about-hero h2 {
+    font-size: 27px;
+  }
+
+  body[data-page="about"] .about-hero-subtitle {
+    font-size: 17px;
+  }
+
+  body[data-page="about"] .about-hero-description {
+    font-size: 15px;
+  }
+}
+
+
+/* =========================================
+   STEP 16-4B : ABOUT CONTENT DESIGN
+   ========================================= */
+
+/* 본문 영역 */
+body[data-page="about"] .about-block {
+  margin-bottom: 55px;
+  padding: 36px;
+  background: #F8F5EE;
+  border-radius: 20px;
+}
+
+/* 영역별 작은 영문 제목 */
+body[data-page="about"] .about-block > .eyebrow {
+  color: #B89A5B;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 14px;
+}
+
+/* 영역별 큰 제목 */
+body[data-page="about"] .about-block > h3 {
+  color: #173F35;
+  font-size: 27px;
+  line-height: 1.5;
+  margin-bottom: 18px;
+  word-break: keep-all;
+}
+
+/* 영역별 설명 */
+body[data-page="about"] .about-block > p:not(.eyebrow) {
+  color: #52645C;
+  font-size: 16px;
+  line-height: 1.9;
+  margin-bottom: 18px;
+  word-break: keep-all;
+}
+
+/* 카드 배열 */
+body[data-page="about"] .about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 25px;
+}
+
+/* 카드 공통 디자인 */
+body[data-page="about"] .about-card {
+  background: #FFFFFF;
+  border: 1px solid #E8E3D8;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 4px 16px rgba(23, 63, 53, 0.04);
+  min-width: 0;
+}
+
+/* 카드의 작은 제목 */
+body[data-page="about"] .about-card .eyebrow {
+  color: #B89A5B;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+/* 카드 제목 */
+body[data-page="about"] .about-card h4 {
+  color: #173F35;
+  font-size: 19px;
+  line-height: 1.5;
+  margin-bottom: 14px;
+  word-break: keep-all;
+}
+
+/* 카드 설명 */
+body[data-page="about"] .about-card p:not(.eyebrow) {
+  color: #52645C;
+  font-size: 15px;
+  line-height: 1.8;
+  word-break: keep-all;
+}
+
+/* 교육 프로그램 자세히 보기 */
+body[data-page="about"] .about-card a {
+  display: inline-block;
+  margin-top: 16px;
+  color: #173F35;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* 협력 안내 영역 */
+body[data-page="about"] .about-partnership {
+  margin-top: 30px;
+  padding: 28px;
+  background: #FFFFFF;
+  border-radius: 16px;
+  border: 1px solid #E8E3D8;
+}
+
+body[data-page="about"] .about-partnership h4 {
+  color: #173F35;
+  font-size: 21px;
+  margin-bottom: 14px;
+}
+
+body[data-page="about"] .about-partnership p {
+  color: #52645C;
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+/* 협력 문의 버튼 */
+body[data-page="about"] .about-partnership .button {
+  display: inline-block;
+  background: #173F35;
+  color: #FFFFFF;
+  padding: 12px 24px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* 모바일 화면 */
+@media (max-width: 768px) {
+
+  body[data-page="about"] .about-block {
+    padding: 24px 18px;
+    margin-bottom: 30px;
+  }
+
+  body[data-page="about"] .about-block > h3 {
+    font-size: 22px;
+  }
+
+  body[data-page="about"] .about-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  body[data-page="about"] .about-card {
+    padding: 22px;
+  }
+
+  body[data-page="about"] .about-card h4 {
+    font-size: 18px;
+  }
+
+  body[data-page="about"] .about-partnership {
+    padding: 22px;
+  }
+}
+
+
+/* =========================================
+   STEP 17-3A : CONTACT PAGE HERO
+   ========================================= */
+
+body[data-page="contact"] .contact-hero {
+  background: #F8F5EE;
+  padding: 70px 40px;
+  border-radius: 20px;
+  text-align: center;
+  margin: 30px 0 55px;
+}
+
+body[data-page="contact"] .contact-hero .eyebrow {
+  color: #B89A5B;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+body[data-page="contact"] .contact-hero h2 {
+  color: #173F35;
+  font-size: clamp(28px, 4vw, 42px);
+  line-height: 1.4;
+  margin-bottom: 22px;
+  word-break: keep-all;
+}
+
+body[data-page="contact"] .contact-hero-subtitle {
+  color: #173F35;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  word-break: keep-all;
+}
+
+body[data-page="contact"] .contact-hero-description {
+  color: #52645C;
+  font-size: 16px;
+  line-height: 1.9;
+  max-width: 720px;
+  margin: 0 auto;
+  word-break: keep-all;
+}
+
+/* 모바일 화면 */
+@media (max-width: 768px) {
+
+  body[data-page="contact"] .contact-hero {
+    padding: 45px 20px;
+    margin: 20px 0 35px;
+  }
+
+  body[data-page="contact"] .contact-hero h2 {
+    font-size: 27px;
+  }
+
+  body[data-page="contact"] .contact-hero-subtitle {
+    font-size: 17px;
+  }
+
+  body[data-page="contact"] .contact-hero-description {
+    font-size: 15px;
+  }
+}
+
+
+/* =========================================
+   STEP 17-3B : CONTACT INQUIRY CARDS
+   ========================================= */
+
+/* 문의 카드 전체 배열 */
+body[data-page="contact"] .contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  margin-bottom: 55px;
+}
+
+/* 문의 카드 공통 디자인 */
+body[data-page="contact"] .contact-card {
+  background: #FFFFFF;
+  border: 1px solid #E8E3D8;
+  border-radius: 18px;
+  padding: 30px 25px;
+  box-shadow: 0 4px 16px rgba(23, 63, 53, 0.05);
+  min-width: 0;
+}
+
+/* 카드 구분 번호 */
+body[data-page="contact"] .contact-card-number {
+  color: #B89A5B;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+}
+
+/* 카드 제목 */
+body[data-page="contact"] .contact-card h3 {
+  color: #173F35;
+  font-size: 21px;
+  line-height: 1.5;
+  margin-bottom: 18px;
+  word-break: keep-all;
+}
+
+/* 카드 설명 */
+body[data-page="contact"] .contact-card p:not(.contact-card-number) {
+  color: #52645C;
+  font-size: 15px;
+  line-height: 1.85;
+  word-break: keep-all;
+}
+
+/* 프로그램 연결 링크 */
+body[data-page="contact"] .contact-card a {
+  display: inline-block;
+  margin-top: 20px;
+  color: #173F35;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* 모바일 화면 */
+@media (max-width: 768px) {
+
+  body[data-page="contact"] .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-bottom: 35px;
+  }
+
+  body[data-page="contact"] .contact-card {
+    padding: 24px 20px;
+  }
+
+  body[data-page="contact"] .contact-card h3 {
+    font-size: 19px;
+  }
+}
+
+
+/* =========================================
+   STEP 17-3C : CONTACT INFORMATION DESIGN
+   ========================================= */
+
+/* 연락처 전체 영역 */
+body[data-page="contact"] .contact-info-panel {
+  background: #F8F5EE;
+  border-radius: 20px;
+  padding: 45px 40px;
+  margin-bottom: 55px;
+}
+
+/* 작은 영문 제목 */
+body[data-page="contact"] .contact-info-panel > .eyebrow {
+  color: #B89A5B;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 16px;
+}
+
+/* 연락처 제목 */
+body[data-page="contact"] .contact-info-panel > h3 {
+  color: #173F35;
+  font-size: 27px;
+  line-height: 1.5;
+  margin-bottom: 18px;
+  word-break: keep-all;
+}
+
+/* 소개 문구 */
+body[data-page="contact"] .contact-info-description {
+  color: #52645C;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 25px;
+  word-break: keep-all;
+}
+
+/* 이메일·전화 카드 배열 */
+body[data-page="contact"] .contact-methods {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+/* 개별 연락처 카드 */
+body[data-page="contact"] .contact-method {
+  background: #FFFFFF;
+  border: 1px solid #E8E3D8;
+  border-radius: 16px;
+  padding: 25px;
+  min-width: 0;
+}
+
+/* 이메일·전화 제목 */
+body[data-page="contact"] .contact-method h4 {
+  color: #B89A5B;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+/* 클릭 가능한 연락처 */
+body[data-page="contact"] .contact-method a {
+  color: #173F35;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+/* 마우스를 올렸을 때 */
+body[data-page="contact"] .contact-method a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* 키보드 접근성 */
+body[data-page="contact"] .contact-method a:focus-visible {
+  outline: 2px solid #B89A5B;
+  outline-offset: 4px;
+  border-radius: 3px;
+}
+
+/* 하단 안내 문구 */
+body[data-page="contact"] .contact-note {
+  color: #52645C;
+  font-size: 15px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* 모바일 화면 */
+@media (max-width: 768px) {
+
+  body[data-page="contact"] .contact-info-panel {
+    padding: 30px 20px;
+    margin-bottom: 35px;
+  }
+
+  body[data-page="contact"] .contact-info-panel > h3 {
+    font-size: 22px;
+  }
+
+  body[data-page="contact"] .contact-methods {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  body[data-page="contact"] .contact-method {
+    padding: 22px;
+  }
+
+  body[data-page="contact"] .contact-method a {
+    font-size: 16px;
+  }
+}
+
+
+/* =========================================
+   STEP 18-5C-2 : FOOTER PARTNER LINK
+   ========================================= */
+
+.site-footer .footer-partner a {
+  color: #FFFFFF;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.site-footer .footer-partner a:hover {
+  color: #E8D6A8;
+}
+
+
+/* STEP 18-5C-4B : HOME CTA COLOR */
+
+body[data-page="home"] .cta-strip {
+  background: #173F35;
+}
+
+
+
